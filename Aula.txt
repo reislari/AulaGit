@@ -2,3 +2,28 @@ Para colocar algo no GitHub
     git add .
     git commit -m "aula"
     git push -u origin main
+
+
+git init (iniciar repositorio)
+git clone	(iniciar repositorio 2.0)
+
+///////////////////////////////////////
+
+git status   (Ver mudanças no codigo)
+git add .	(O que foi alteraldo)
+git commit -m     "(nome de alteracao)"
+git push -u origin main
+
+
+///////////////////// 
+
+
+
+Git para Casa 
+
+
+
+(  Vai no git e clica no code e copia o endereço )
+
+git clone e o endereço copiado
+
