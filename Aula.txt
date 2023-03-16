@@ -1,0 +1,4 @@
+Para colocar algo no GitHub
+    git add .
+    git commit -m "aula"
+    git push -u origin main
