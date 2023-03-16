@@ -1,0 +1,19 @@
+Git init - controle de inversão 
+
+Git status - verificar alterações/modificações 
+
+Git add (nomedoarquivo.extensãodoarquivo) - adicionar arquivo a proxima versão 
+
+Git commit -m "" - gerar outra versão
+
+Git add . - Adicionar todos arquivos alterados na proxima versão
+
+Git config -- global user.name "nomedeusuario" - adiciona nome de usuario
+ 
+Git config -- global user.email "seuemail" - adiciona email
+
+Git log - lista todos os commits
+
+Clear limpa o terminal 
+
+Obs: Provavelmente no primeiro commit que fizer irá pedir para inserir usuario e email
