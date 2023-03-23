@@ -1,0 +1,11 @@
+git status  -    para ver se teve alguma alteração
+git add .    -     para adicionar o que foi criado ao git
+git commit -m "aula"     -   para falar o que foi feito 
+git push -u origin main  - ele vai pedir o tokin
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+para pegar a pasta vai no repositorio cópia o endereço e da um git clone 
+e cola o endereço 
+
+-----------------------------------------------------------------------------------------------------------------------------------
