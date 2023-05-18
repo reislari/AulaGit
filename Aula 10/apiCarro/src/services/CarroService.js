@@ -25,5 +25,30 @@ module.exports = {
                     aceito(false);
             });
         });
+    },
+
+    Inserir: (modelo, placa) =>{
+        return new Promise((aceito, rejeitado)=>{
+           
+            db.query('INSERT INTO carros (modelo, placa) VALUES (?, ?)',[modelo, placa], (error, results)=>{
+                if(error) {rejeitado(error); return;}
+                aceito(results.insertCodigo);
+                
+            });
+        });
+    },
+
+    excluir: (codigo) =>{
+        return new Promise((aceito, rejeitado)=>{
+           
+            db.query('DELETE * FROM carros WHERE codigo = ?',[codigo], (error, results)=>{
+                if(error){ {rejeitado(error); return;}
+                aceito(results);
+            }
+                else
+                    aceito(false);
+            });
+        });
     }
+    
 };
