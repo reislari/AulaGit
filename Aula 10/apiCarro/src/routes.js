@@ -11,6 +11,6 @@ router.post('/carro', CarroController.inserir);
 
 router.delete('/carro/:codigo', CarroController.excluir) 
 
-router.put()
+router.put('/carro/:codigo', CarroController.alterar)
 
 module.exports = router;

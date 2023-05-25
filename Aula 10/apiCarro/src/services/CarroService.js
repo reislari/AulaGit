@@ -41,12 +41,20 @@ module.exports = {
     excluir: (codigo) =>{
         return new Promise((aceito, rejeitado)=>{
            
-            db.query('DELETE * FROM carros WHERE codigo = ?',[codigo], (error, results)=>{
-                if(error){ {rejeitado(error); return;}
+            db.query('DELETE FROM carros WHERE codigo = ?',[codigo], (error, results)=>{
+                if(error) {rejeitado(error); return;}
                 aceito(results);
-            }
-                else
-                    aceito(false);
+            });
+        });
+    },
+
+    alterar: (codigo, modelo, placa) =>{
+        return new Promise((aceito, rejeitado)=>{
+           
+            db.query('UPDATE carros SET modelo = ?, placa = ? WHERE codigo = ?',[modelo, placa, codigo], (error, results)=>{
+                if(error) {rejeitado(error); return;}
+                aceito(results);
+                
             });
         });
     }
